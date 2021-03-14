@@ -6,7 +6,7 @@ import AppText from "../components/AppText";
 import Screen from "../components/Screen";
 
 let text;
-fetch("https://loripsum.net/api/2/plaintext/long/")
+fetch("https://loripsum.net/api/2/plaintext/long/") // had to duplicate here otherwise it doesn't show the first time this screen loads
   .then((r) => r.text())
   .then((t) => {
     text = t;
@@ -15,6 +15,11 @@ fetch("https://loripsum.net/api/2/plaintext/long/")
 function TrombinoscopeDetails({ route }) {
   const navigation = useNavigation();
   const member = route.params.member;
+  fetch("https://loripsum.net/api/2/plaintext/long/")
+    .then((r) => r.text())
+    .then((t) => {
+      text = t;
+    });
   return (
     <ScrollView>
       <Screen style={styles.container}>

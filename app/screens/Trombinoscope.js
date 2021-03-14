@@ -14,7 +14,7 @@ function Trombinoscope(props) {
           <View style={{ width: "45%", margin: "2.5%" }} key={member.id}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("TrombinoscopeDetails", { member })}
+              onPress={() => navigation.navigate("details", { member })}
             >
               <Image borderRadius={50} source={{ width: 150, height: 150, uri: member.photo }} />
               <Text style={{ fontSize: 20, textAlign: "center", marginTop: 7 }}>{member.name}</Text>
