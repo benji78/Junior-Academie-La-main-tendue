@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Junior-Academie-La-main-tendue",
-    "slug": "Junior-Academie-La-main-tendue",
+    "name": "Junior-Academie-Trombinoscope",
+    "slug": "Junior-Academie-Trombinoscope",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "",
+    "githubUrl": "https://github.com/benji78/Junior-Academie-Trombinoscope"
   }
 }
